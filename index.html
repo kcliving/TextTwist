@@ -36,8 +36,12 @@
     let wordlength = 0;
     let line = "";
 
-    function newGame(rack) {
+    function newGame(text) {
+      console.log(text);
+      var str = text;
+      var rack = text.charAt(3);
       console.log(rack);
+
       score = 0;
       currentdisplay = [];
       words = [];
