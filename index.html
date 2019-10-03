@@ -36,21 +36,15 @@
       console.log(text);
       var str = text;
       var rack = text.substring(10,17);
+      
       wordlist = text.substring(28,(text.length-3));
       console.log(rack);
+      Document.getElementById("letters").value = rack;
       console.log(wordlist);
       words = wordlist.split("@@");
       console.log(words[0]);
 
-      score = 0;
-      currentdisplay = [];
-      words = [];
-      words = rack["words"].split("@@");
-      $("#correct").html('');
-      console.log(words);
-      words = rack["words"]
-      console.log(words);
-      document.querySelector("#letters").innerHTML = rack["rack"];
+      
     }
     
     $("#getrack").on("click", function () {
