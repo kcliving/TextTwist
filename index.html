@@ -51,7 +51,8 @@
     $("#getrack").on("click", function () {
       $.ajax({
         method: "GET",
-        url: "api.php",
+        url: "api.php?button = newGame",
+        dataType: 'json',
         success: data => { newGame(data) }
       });
     });
