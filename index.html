@@ -45,24 +45,7 @@
       words = rack["words"].split("@@");
       document.querySelector("#letters").innerHTML = rack["rack"];
     }
-
-
-
-    /*let showRacks = function (racks) {
-      $("#letters").html('');
-      racks.map(rack => {
-        $("#letters").append(`<div>${rack.rack}: <class ="answer hidden"> ${rack.words}</span></div>`);
-        answer = rack.words;
-      });
-
-      $("#letters").on("click", function (evt) {
-        $(evt.currentTarget).find(".answer").toggleClass("hidden")
-      });
-    }*/
-
-
-
-
+    
     $("#getrack").on("click", function () {
       $.ajax({
         method: "GET",
