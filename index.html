@@ -31,10 +31,6 @@
   var answer;
   var total = 0;
   $(document).ready(function () {
-    let words = [];
-    let letterRack = [];
-    let wordlength = 0;
-    let line = "";
 
     function newGame(text) {
       console.log(text);
@@ -43,6 +39,7 @@
       wordlist = text.substring(28,(text.length-3));
       console.log(rack);
       console.log(wordlist);
+      words = wordlist.split("@@");
 
       score = 0;
       currentdisplay = [];
