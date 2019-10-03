@@ -33,17 +33,13 @@
   $(document).ready(function () {
 
     function newGame(text) {
-      console.log(text);
       var str = text;
       var rack = text.substring(10,17);
       
       wordlist = text.substring(28,(text.length-3));
-      console.log(rack);
-      document.getElementById("letters").value = rack;
+      document.getElementById("letters").innerHTML = rack;
       console.log(document.getElementById("letters").value);
-      console.log(wordlist);
       words = wordlist.split("@@");
-      console.log(words[0]);
 
       
     }
