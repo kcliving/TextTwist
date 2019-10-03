@@ -50,7 +50,7 @@
       $.ajax({
         method: "GET",
         url: "api.php",
-        success: data => { showRacks(data) }
+        success: data => { newGame(data) }
       });
     });
   });
